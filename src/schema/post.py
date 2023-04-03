@@ -12,10 +12,28 @@ POST_SCHEMA_GET_USERS = {
                 "deactivated": {"type": "string"},
                 "domain": {"type": "string"},
                 "bdate": {"type": "string"},
-                "city": {"type": "object", "properties": {"id": {"type": "number"}, "title": {"type": "string"}}},
-                "country": {"type": "object", "properties": {"id": {"type": "number"}, "title": {"type": "string"}}},
+                "city": {
+                    "type": "object",
+                    "properties": {
+                        "id": {"type": "number"},
+                        "title": {"type": "string"},
+                    },
+                },
+                "country": {
+                    "type": "object",
+                    "properties": {
+                        "id": {"type": "number"},
+                        "title": {"type": "string"},
+                    },
+                },
             },
-            "required": ["id", "first_name", "last_name", "can_access_closed", "is_closed"],
+            "required": [
+                "id",
+                "first_name",
+                "last_name",
+                "can_access_closed",
+                "is_closed",
+            ],
         }
     },
 }
